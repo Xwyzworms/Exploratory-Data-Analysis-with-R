@@ -76,4 +76,61 @@ graphics::abline(v = median(pollution$pm25), col = "magenta", lwd = 4)
 table(pollution$region) %>% graphics::barplot(col = "wheat")
 # Dominated by east 
 
-#
+#===========================================================================
+
+#7.11# Multiple Boxplots
+# This is the simple one to show the relationship between two variables.
+graphics::boxplot( pm25 ~ region , data = pollution , col ='red')
+# y ~ x#
+# We can see from here east has more 
+# higher pm25 than West ,but more observation > standard.
+
+#7.12# Multiple Histograms
+# Sometime its useful to see 2 histogram distribution to know how the observation varies.
+
+graphics::par(mfrow = c(2,1)  ) #
+graphics::hist(subset(pollution , region == "east")$pm25, col ="green")
+graphics::hist(subset(pollution , region == "west")$pm25 , col = "green")
+
+#we can see from here that east is approximately norm ,while west right skewed
+base::summary(subset(pollution , region == "west")$pm25) # True Mean > Median,Right
+
+base::summary(subset(pollution , region == "east")$pm25) # True mean ~ median 
+
+graphics::hist(subset(pollution,region == "east")$pm25 , col = "red")
+# change the mfrow to , c(1,1) ) row , colum
+# yep its approximately norm
+
+#7.13# ScatterPlot
+# Usually Used when you want to visualize Continouos variables . 
+
+with(pollution , plot(latitude , pm25))# Same As below
+
+plot(pollution$latitude , pollution$pm25)
+
+graphics::abline(h = 12 , lty = 2 , lwd = 2)
+
+# as you can see , there's higher pm25 at middle of county approximately 40 - 42 latitude
+
+# Adding Col arguments
+
+#7.14# Scatter Plot using Color
+
+plot(pollution$latitude , pollution$pm25,col = pollution$region )
+levels(pollution$region) # 1 east == Black , 2 west==Red
+
+
+#7.15#
+graphics::par(mfrow = c(1,2) ,mar = c(5,4,2,1))
+
+graphics::plot( subset(pollution ,region == "west")$latitude , subset(pollution , region == "west")$pm25 , main = "WEST")
+graphics::abline(h = 12 ,lty = 2 , lwd = 1)
+
+with(subset(pollution , region == "east") , plot(latitude,pm25 , main = "EAst") )
+graphics::abline(h = 12 ,lty = 2 , lwd = 1)
+
+
+#Using lattice
+
+# What we got from here is that even tho east have more observation , but there are 
+# many observation > standard than West ,.
