@@ -57,7 +57,7 @@
   * Actual 3-D plots.Well this is obvio.
 
 ## 7.11 - 7.15#  
- - [x] [Link] (https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/tree/master/4.Exploratory%20Graphs/Exploratory.R)
+ - [x] [Link](https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/tree/master/4.Exploratory%20Graphs/Exploratory.R)
 
 ## 7.16 Summary
 Exploratory plots are **"quick and dirty"** and their purpose is to let you **summarize the data** and **highlight any broad features**. They are also useful for exploring **basic questions** about the data and for judging the evidence for or against certain hypotheses.
