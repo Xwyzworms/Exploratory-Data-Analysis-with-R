@@ -1,6 +1,6 @@
 # 10. The Base Plotting System
 
-[Now She's Gone]()
+[Now She's Gone](https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/blob/master/7.The%20Base%20Plotting%20System/SimpleBase.R)
 
 - The core plotting and graphics engine in R is encapsulated in the following packages:
   - graphics: contains plotting functions for the **base** graphing systems, including plot, hist, boxplot and many others.
@@ -12,10 +12,10 @@
     - Annotate the plot
   - par() controlling the global of behavior of plots ,such as the margins, axis orientation, and other details
 
-##10.2 Simple Base Graphics
+## 10.2 Simple Base Graphics
 - Histogram , boxplot,Scatter PLot and friends but builded by Base system.
 
-##10.3 Some Important Base Graphics Parameters
+## 10.3 Some Important Base Graphics Parameters
 Here are a few key ones , for Plotting:
 • pch: the plotting symbol (default is open circle)
 • lty: the line type (default is solid line), can be dashed, dotted, etc.
@@ -46,18 +46,18 @@ values (or a 2-column matrix); this function just connects the dots
 • mtext: add arbitrary text to the margins (inner or outer) of the plot
 • axis: adding axis ticks/labels
 
-- [Link to Code]()
+- [Link to Code](https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/blob/master/7.The%20Base%20Plotting%20System/SimpleBase.R)
 ## I'D Encourage to lokkk at the code !
 
-##10.5 Base Plot With Regression Line
+## 10.5 Base Plot With Regression Line
  - use lm() for linear Regression
  - use abline() To Plot it out
-##10.6 Multiple Base Plots
+## 10.6 Multiple Base Plots
  - Use par() mfrow arguments(row,col)
  - That's it , every plot() func you call its going to take the coresspondng template
-##10.7
+## 10.7
 
 • Plotting occurs in two stages:
 - Creation of a plot
 - Annotation of a plot (adding lines, points, text, legends)
-• The base plotting system is very flexible and offers a high degree of control over plotting
+• The base plotting system is very flexib le and offers a high degree of control over plotting
