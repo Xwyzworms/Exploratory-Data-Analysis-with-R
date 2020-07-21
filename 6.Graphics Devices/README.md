@@ -1,4 +1,4 @@
-#9. Graphics Devices
+# 9. Graphics Devices
 - Where The plot Appear :
   - Screen Device
   - PDF
@@ -6,7 +6,7 @@
   - Scalable vector Graphics
 - graphics devices is implemented in the **grDevices** package, which comes with a standard R installation and is typically loaded by default.
 
-##9.1 The Process of Making A plot
+## 9.1 The Process of Making A plot
 
 Where will the plot be made? On the screen? In a file?
 • How will the plot be used?
@@ -24,6 +24,7 @@ be mixed.
 2. The plot appears on the screen device
 3. Annotate the plot if necessary
 4. Enjoy
+
 ## Saving Plot,how it goes?
 
 1. Explicitly launch a graphics device
@@ -31,7 +32,7 @@ be mixed.
 3. Annotate the plot if necessary
 4. Explicitly close graphics device with dev.off() (this is very important!)
 
-Example ? [Here]()
+Example ? [Here](https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/blob/master/6.Graphics%20Devices/GraphicsDevice.R)
 
 ## 9.3 Graphics File Devices
 There are two basic types of file devices to consider: vector and bitmap devices.
@@ -54,16 +55,16 @@ There are two basic types of file devices to consider: vector and bitmap devices
   - bmp: a native Windows bitmapped format
 ## 9.4 Multiple Open Graphics Devices
   - You can do it :D , change the *dev.set(<integer>)* TO how many graphicsdevices you want .
-  Example again ? [Here]()
+  Example again ? [Here](https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/blob/master/6.Graphics%20Devices/GraphicsDevice.R)
 
 ## 9.5 Copying plots
   - you can do it .*dev.copy()* <- Copy from one device to another
   - *dev.copy2pdf()* <- copy current plot within screen to pdf
   - NOTE :
   result may not be identical to the original. In particular, when copying from the screen device to a file, depending on the size of the file device, many annotations such as axis labels may not look right.
-  Example ? [Here]()
+  Example ? [Here](https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/blob/master/6.Graphics%20Devices/GraphicsDevice.R)
 
-#9.6 Summary
+## 9.6 Summary
 - Plots must be created on a graphics device. The default graphics device is almost always the screen device, which is most  useful for exploratory analysis.
 - File devices are useful for creating plots that can be included in other documents or sent to other people
 
