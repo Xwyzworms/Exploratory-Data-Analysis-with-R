@@ -1,7 +1,7 @@
 # 13.K-Means Clustering
 
 ## it's short but well to know deep dive into Cluster analysis when you dealing with data .
-- [Code]()
+- [Code](https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/blob/master/10.K-Means%20Clustering/Kmeans.R)
 - The basic idea is that you are trying to find the centroids of a fixed number of clusters of points in a high-dimensional space
 How the Algorithm works :
 1. Specify number of clusters at some integer DONT try 1 :D
