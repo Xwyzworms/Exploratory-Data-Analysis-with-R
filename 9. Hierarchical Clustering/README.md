@@ -22,7 +22,7 @@ Algorithms Recursively :
 - How To Choose ? I dont know yet, but i prefer using Manhattan Distance ,but still we need to practice it.
 
 ## 12.5 Example : Hierarchical Clustering.
-- Code , [Incoming]()
+- Code , [Incoming](https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/blob/master/9.%20Hierarchical%20Clustering/Heirarashdas.R)
 
 ## 12.6 Prettier dendograms
 - Code , honestly this make sense ,but the code make my head crazy..
@@ -37,7 +37,7 @@ Algorithms Recursively :
  - you get a dendrogram associated with both the rows and columns of a matrix,
  More easy than Hierarchical.
 
- --[Code]()
+ --[Code](https://github.com/Xwyzworms/Exploratory-Data-Analysis-with-R/blob/master/9.%20Hierarchical%20Clustering/Heirarashdas.R)
 ## 12.10 summary
 Hierarchical clustering is a really useful tool because it quickly gives you an idea of the relationships between variables/observations. But caution should be used with clustering as often the picture that you produce can be unstable. In particular,
  it may be sensitive to Hierarchical Clustering :
